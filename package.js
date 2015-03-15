@@ -11,7 +11,7 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: 'compileJSX',
-  use: ['coffeescript'],
+  use: ['coffeescript@1.0.5'],
   sources: [
     'plugin/compile-jsx.coffee'
   ],
