@@ -22,7 +22,15 @@ transformCoffee = (compileStep) ->
 
   # TODO: Work out how to include source-maps.
   options = { bare:true }
-  code = coffee.compile(coffeeTransform(source), options)
+
+  try
+    code = coffee.compile(coffeeTransform(source), options)
+  catch e
+    throw new Error(
+      compileStep.inputPath + ':' +
+      (if e.location then (e.location.first_line + ': ') else ' ') +
+      e.message
+    )
 
   compileStep.addJavaScript
     path:       outputFile
