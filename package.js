@@ -22,3 +22,5 @@ Package.registerBuildPlugin({
   }
 });
 
+Package.onTest(function(api){
+});
