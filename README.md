@@ -3,12 +3,14 @@ Compile JSX files from Javascript of CoffeeScript into JS.
 
 
 # Instructions
-- Javascript files use the `.jsx` extension.
 - CoffeeScript files use the `.cjsx` extension.
 
 
 
 # Credits
+This package is a fork of:
+https://github.com/Respondly/meteor-react-compiler
+
 Based on https://github.com/reactjs/react-meteor
 by [benjamn](https://github.com/benjamn)
 

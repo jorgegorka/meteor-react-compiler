@@ -2,7 +2,7 @@ var reactVersion = '0.13.0';
 
 
 Package.describe({
-  name: 'respondly:react-compiler',
+  name: 'jorgegorka:react-compiler',
   version: reactVersion,
   summary: 'A React JSX compiler for JS and CoffeeScript.'
 });
